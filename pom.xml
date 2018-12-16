@@ -46,16 +46,25 @@
     </repositories>
 
 
+
+
+
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>isouth-repo-release</id>
+            <name>releases</name>
+            <url>http://localhost:8081/repository/isouth/release/</url>
+            <uniqueVersion>true</uniqueVersion>
         </repository>
+        <snapshotRepository>
+            <id>isouth-repo-snapshot</id>
+            <name>snapshots</name>
+            <url>http://localhost:8081/repository/isouth/snapshots/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
     </distributionManagement>
+
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
