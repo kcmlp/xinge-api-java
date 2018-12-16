@@ -1,6 +1,7 @@
 package com.tencent.xinge.bean;
 
 import org.codehaus.jackson.map.ObjectMapper;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -8,6 +9,7 @@ import static org.junit.Assert.*;
 public class AtyAttrTest {
 
     @Test
+    @Ignore
     public void testAtyAttr() {
         AtyAttr atyAttr = new AtyAttr();
         atyAttr.setPf(0);
